@@ -1,0 +1,22 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    // https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-core
+    compile group: 'org.openjdk.jmh', name: 'jmh-core', version: '0.5.3'
+    // https://mvnrepository.com/artifact/com.netflix.rxjava/rxjava-core
+    compile group: 'com.netflix.rxjava', name: 'rxjava-core', version: '0.16.1'
+    // https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all
+    testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+// https://mvnrepository.com/artifact/org.mockito/mockito-all
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
+// https://mvnrepository.com/artifact/org.powermock/powermock-mockito-release-full
+    testCompile group: 'org.powermock', name: 'powermock-mockito-release-full', version: '1.5.3'
+
+
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
